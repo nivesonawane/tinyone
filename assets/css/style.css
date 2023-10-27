@@ -1,0 +1,204 @@
+
+/* ################## heroImg css ##########################*/
+.heroImg{
+    padding: 75px 0 105px;
+    background-color: var(--color-primary);
+}
+
+.navbar-default.mainHeader {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.mainHeader .navbar-nav>li>a {
+    color: var(--text-color-primary);
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+   
+}
+
+.mainHeader .navbar-nav>li>a {
+    margin-left: 30px;
+  }
+
+  .mainHeader .navbar-nav>li>a::after{
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 5px;
+     background-color: var(--dark-color);
+     width: 0%;
+     transition: all .4s linear;
+  }
+     
+.mainHeader .navbar-nav>li>a:hover::after{
+    width: 100%;
+  }
+
+.inspiration{
+    margin-top: 75px;
+}
+.ipad{
+    margin-left: 100px;
+}
+.brandIcons li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.brandIcons li a i{
+    color: var(--text-color-primary);
+    transition: all .4s ease-in-out;
+}
+
+
+.brandIcons li a i:hover{
+  transform: translateY(-10px) scale(2);
+}
+
+.features{
+    padding: 115px 0 80px;
+}
+
+.features .feature-heading{
+    margin-bottom: 85px;
+}
+
+.features .ourthumbnail{
+    margin-bottom: 80px;
+}
+
+.ourthumbnail i{
+    padding-top: 20px;
+}
+.contact{
+    background-color: var(--text-color-primary);
+    padding: 90px 0 135px;
+}
+
+.contact .pri-heading{
+  color: var(--color-primary);
+}
+
+.contact .sec-heading{
+   color: var(--text-color-qurt);
+   font-size: 20px;
+   margin-bottom: 40px;
+}
+
+.email .signin{
+    display: inline-block;
+    width: calc(100% - 160px);
+    height: 50px;
+    margin-right: 20px;
+}
+
+.email .signin::placeholder{
+    color: var(--text-color-qurt);
+}
+
+.email .btn{
+    height: 50px;
+    width: 130px;
+    background-color: var(--color-primary);
+    color: var(--text-color-primary);
+    text-transform: uppercase;
+    border: 1px solid var(--color-primary);
+    font-weight: bold;
+ }
+
+ .email .btn:hover,
+ .email .btn:focus,
+ .email .btn:active{
+    color: var(--color-primary);
+    background-color: var(--text-color-primary);
+ }
+
+.contact .email{
+    margin-bottom: 85px;
+}
+
+.contact .brandIcons i{
+  color: var(--color-primary);
+  
+}
+
+.contact .brandIcons{
+    margin-bottom: 85px;
+}
+
+.contact .brandIcons li a i:hover{
+  transform: translateY(10px) rotate(360deg);
+}
+.address li {
+ color: var(--white-color);
+ font-size: 16px;
+ font-weight: normal;
+}
+
+.address li a{
+    color: var(--white-color);
+}
+
+@media all and (min-width: 768px){
+    .mainHeader .navbar-brand{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .mainHeader{
+        margin-bottom: 55px;
+    }
+    .mainHeader .navbar-nav>li{
+        float: left;
+        margin-left: 30px;
+    }
+    .ipad{
+        margin-left: 90px;
+    }
+   
+}
+
+@media all and (max-width: 600px){
+    .section{
+        padding: 50px 0;
+    }
+    .mainHeader .navbar-toggle {
+        border-color: var(--text-color-primary);
+    }
+    .mainHeader .navbar-toggle .icon-bar {
+        background-color: var(--text-color-primary);
+    }
+	.mainHeader .navbar-brand>img{
+		transform: translateY(-15px);
+	}
+		
+    .inspiration{
+        margin: 0 0 20px;
+    }
+    .inspiration .brandIcons{
+        margin-bottom: 30px;
+    }
+    .ipad{
+        width: 250px;
+        margin-left: 40px;
+    }
+    .features .feature-heading {
+        margin-bottom: 40px;
+    }
+    .features .ourthumbnail{
+        margin-bottom: 15px;
+    }
+    .email .signin{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .email .btn{
+        width: 100%;
+    }
+    .contact .brandIcons{
+        margin-bottom: 40px;
+    }
+    
+}
